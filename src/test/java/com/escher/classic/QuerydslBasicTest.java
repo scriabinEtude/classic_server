@@ -11,7 +11,6 @@ import org.springframework.transaction.annotation.Transactional;
 import com.escher.classic.entity.Member;
 import static com.escher.classic.entity.QMember.*;
 import com.escher.classic.entity.Team;
-import com.querydsl.core.QueryFactory;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
 @SpringBootTest
