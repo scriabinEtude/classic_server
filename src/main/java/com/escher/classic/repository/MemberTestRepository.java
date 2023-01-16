@@ -6,9 +6,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
 
-import com.escher.classic.dto.MemberSearchCondition;
-import com.escher.classic.entity.Member;
 import static com.escher.classic.entity.QMember.*;
+
+import com.escher.classic.data.dto.MemberSearchCondition;
+import com.escher.classic.data.entity.Member;
 import com.escher.classic.repository.support.Querydsl4RepositorySupport;
 
 @Repository

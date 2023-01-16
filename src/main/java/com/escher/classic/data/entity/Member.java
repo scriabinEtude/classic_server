@@ -1,4 +1,4 @@
-package com.escher.classic.entity;
+package com.escher.classic.data.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

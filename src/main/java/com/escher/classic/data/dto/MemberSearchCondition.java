@@ -1,4 +1,4 @@
-package com.escher.classic.dto;
+package com.escher.classic.data.dto;
 
 import lombok.Data;
 

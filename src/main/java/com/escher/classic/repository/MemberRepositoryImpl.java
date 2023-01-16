@@ -9,9 +9,10 @@ import org.springframework.data.support.PageableExecutionUtils;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
 
-import com.escher.classic.dto.MemberSearchCondition;
-import com.escher.classic.dto.MemberTeamDto;
+import com.escher.classic.data.dto.MemberSearchCondition;
+import com.escher.classic.data.dto.MemberTeamDto;
 import com.escher.classic.dto.QMemberTeamDto;
+
 import static com.escher.classic.entity.QMember.*;
 import static com.escher.classic.entity.QTeam.*;
 

@@ -1,4 +1,4 @@
-package com.escher.classic.entity;
+package com.escher.classic.data.entity;
 
 import java.util.ArrayList;
 import java.util.List;

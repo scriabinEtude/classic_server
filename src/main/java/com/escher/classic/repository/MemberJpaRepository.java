@@ -8,10 +8,10 @@ import javax.persistence.EntityManager;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
 
-import com.escher.classic.dto.MemberSearchCondition;
-import com.escher.classic.dto.MemberTeamDto;
+import com.escher.classic.data.dto.MemberSearchCondition;
+import com.escher.classic.data.dto.MemberTeamDto;
+import com.escher.classic.data.entity.Member;
 import com.escher.classic.dto.QMemberTeamDto;
-import com.escher.classic.entity.Member;
 
 import static com.escher.classic.entity.QMember.*;
 import static com.escher.classic.entity.QTeam.*;

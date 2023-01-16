@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.escher.classic.entity.Member;
-import com.escher.classic.entity.Team;
+import com.escher.classic.data.entity.Member;
+import com.escher.classic.data.entity.Team;
 
 import lombok.RequiredArgsConstructor;
 
