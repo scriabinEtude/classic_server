@@ -1,11 +1,15 @@
 package com.escher.classic.data.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 import lombok.Data;
 
@@ -14,6 +18,10 @@ import lombok.Data;
 public class Music {
     @Id @GeneratedValue
     private Long musicId;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "personId")
+    private Person composer;
     
     private String title;
     private String kor;
@@ -31,5 +39,9 @@ public class Music {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "userId")
     private User user;
+
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "musicTagId")
+    private List<MusicTag> musicTags = new ArrayList<>();
 
 }
