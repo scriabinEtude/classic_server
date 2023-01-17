@@ -14,7 +14,7 @@ public class Code {
 
     private String groupname;
     private String codename;
-    private int seq;
+    private Integer seq;
     private String value;
 
 }

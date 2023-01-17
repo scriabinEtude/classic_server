@@ -21,5 +21,5 @@ public class MusicTag {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "personId")
-    private Person person;
+    private Person composer;
 }

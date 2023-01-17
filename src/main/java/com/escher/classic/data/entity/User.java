@@ -2,6 +2,8 @@ package com.escher.classic.data.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
@@ -18,7 +20,9 @@ public class User {
     private String provider;
     private String password;
     private String nickname;
+    @Enumerated(EnumType.STRING)
     private UserStatus status;
+    @Enumerated(EnumType.STRING)
     private UserType type;
     private boolean verified;
     private String platform;

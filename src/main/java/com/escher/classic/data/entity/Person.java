@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -25,6 +27,7 @@ public class Person {
     private String name;
     private String kor;
 
+    @Enumerated(EnumType.STRING)
     private PersonType tyoe;
     
     private LocalDate birth;
@@ -37,4 +40,7 @@ public class Person {
 
     @OneToMany(mappedBy = "composer")
     List<Music> musics = new ArrayList<Music>();
+
+    @OneToMany(mappedBy = "person")
+    List<LinkPerson> linkPersons = new ArrayList<>();
 }

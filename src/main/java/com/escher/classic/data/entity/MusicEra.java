@@ -15,8 +15,8 @@ public class MusicEra {
     @Id @GeneratedValue
     private Long musicEraId;
 
-    private int start;
-    private int end;
+    private Integer start;
+    private Integer end;
 
 
     @ManyToOne(fetch = FetchType.LAZY)

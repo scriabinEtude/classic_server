@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -30,10 +32,14 @@ public class Description {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "descriptionId")
     private Description parent;
-    private int depth;
+    private Integer depth;
+
+    @Enumerated(EnumType.STRING)
     private LangType lang;
     private String title;
     private String description;
+    
+    @Enumerated(EnumType.STRING)
     private DescriptionStatus status;
 
     @OneToMany(mappedBy = "description", fetch = FetchType.LAZY)
@@ -43,8 +49,8 @@ public class Description {
     @JoinColumn(name = "userId")
     private User user;
 
-    private int likeCount;
-    private int reportCount;
+    private Integer likeCount;
+    private Integer reportCount;
     private LocalDateTime updatedAt;
     private LocalDateTime createdAt;
 

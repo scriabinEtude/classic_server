@@ -40,8 +40,10 @@ public class Music {
     @JoinColumn(name = "userId")
     private User user;
 
-    @OneToMany(fetch = FetchType.LAZY)
-    @JoinColumn(name = "musicTagId")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "music")
     private List<MusicTag> musicTags = new ArrayList<>();
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "music")
+    private List<LinkMusic> linkMusics = new ArrayList<>();
 
 }
