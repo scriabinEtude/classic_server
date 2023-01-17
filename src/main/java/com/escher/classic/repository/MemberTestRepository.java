@@ -6,7 +6,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
 
-import static com.escher.classic.entity.QMember.*;
+import static com.escher.classic.data.entity.QMember.*;
 
 import com.escher.classic.data.dto.MemberSearchCondition;
 import com.escher.classic.data.entity.Member;

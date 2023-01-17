@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.escher.classic.data.entity.Hello;
-import com.escher.classic.entity.QHello;
+import com.escher.classic.data.entity.QHello;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
 @SpringBootTest

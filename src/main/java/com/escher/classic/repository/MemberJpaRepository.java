@@ -11,10 +11,11 @@ import org.springframework.util.StringUtils;
 import com.escher.classic.data.dto.MemberSearchCondition;
 import com.escher.classic.data.dto.MemberTeamDto;
 import com.escher.classic.data.entity.Member;
-import com.escher.classic.dto.QMemberTeamDto;
+import com.escher.classic.data.entity.QUser;
+import com.escher.classic.data.dto.QMemberTeamDto;
 
-import static com.escher.classic.entity.QMember.*;
-import static com.escher.classic.entity.QTeam.*;
+import static com.escher.classic.data.entity.QMember.*; 
+import static com.escher.classic.data.entity.QTeam.*;
 
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.core.types.dsl.BooleanExpression;
