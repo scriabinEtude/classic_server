@@ -11,7 +11,6 @@ import org.springframework.util.StringUtils;
 import com.escher.classic.data.dto.MemberSearchCondition;
 import com.escher.classic.data.dto.MemberTeamDto;
 import com.escher.classic.data.entity.Member;
-import com.escher.classic.data.entity.QUser;
 import com.escher.classic.data.dto.QMemberTeamDto;
 
 import static com.escher.classic.data.entity.QMember.*; 
