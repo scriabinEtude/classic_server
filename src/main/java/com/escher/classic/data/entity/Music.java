@@ -41,6 +41,9 @@ public class Music {
     private User user;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "music")
+    private List<MusicSentence> musicSentences = new ArrayList<>();
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "music")
     private List<MusicTag> musicTags = new ArrayList<>();
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "music")
